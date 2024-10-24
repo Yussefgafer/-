@@ -47,12 +47,11 @@ nav .back {
 .body {
   background-color: #222; /* لون خلفية iOS */
   position: absolute;
-  top: 44px; /* مسافة من أعلى */
+  top: 45px; /* مسافة من أعلى */
   left: 10px;
   right: 10px;
-  bottom: 50px;
-  border-radius: 8px; /* زوايا مستديرة */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* ظل iOS */
+  bottom: 45px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* ظل iOS */
   overflow-y: auto;
   align-items: center;
   text-align: center;

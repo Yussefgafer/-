@@ -51,7 +51,6 @@ nav .back {
   left: 10px;
   right: 10px;
   bottom: 50px;
-  border-radius: 8px; /* زوايا مستديرة */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ظل iOS */
   overflow-y: auto;
   align-items: center;
