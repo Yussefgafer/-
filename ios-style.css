@@ -7,8 +7,8 @@
 body {
   font-size: 15pt;
   display: block;
-  background-color: #222; /* لون خلفية iOS المظلم */
-  color: #eee; /* لون نص iOS المظلم */
+  background-color: #f2f2f2; /* لون خلفية iOS */
+  color: #333; /* لون نص iOS */
   font-family: 'Helvetica Neue', sans-serif; /* خط iOS */
 }
 
@@ -19,19 +19,19 @@ nav {
   left: 0;
   margin: 0;
   padding: 0;
-  background-color: #333; /* لون شريط التنقل في iOS المظلم */
+  background-color: #fff; /* لون أبيض iOS */
   width: 100%;
   height: 44px; /* ارتفاع شريط التنقل في iOS */
   font-size: 20px; /* حجم النص في شريط التنقل */
   text-align: center;
-  border-bottom: 1px solid #444; /* خط فاصل */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* ظل iOS */
+  border-bottom: 1px solid #ccc; /* خط فاصل */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ظل iOS */
   display: block;
 }
 
 /* زر العودة */
 nav .back {
-  color: #eee; /* لون زر العودة في iOS المظلم */
+  color: #007aff; /* لون زر العودة في iOS */
   display: none;
   position: absolute;
   top: 10px;
@@ -45,14 +45,14 @@ nav .back {
 
 /* محتوى الصفحة (body) */
 .body {
-  background-color: #222; /* لون خلفية iOS */
+  background-color: #f2f2f2; /* لون خلفية iOS */
   position: absolute;
   top: 44px; /* مسافة من أعلى */
   left: 10px;
   right: 10px;
   bottom: 50px;
   border-radius: 8px; /* زوايا مستديرة */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* ظل iOS */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ظل iOS */
   overflow-y: auto;
   align-items: center;
   text-align: center;
@@ -61,24 +61,23 @@ nav .back {
 
 /* كارت (Card) */
 .card {
-  background-color: #333; /* لون أبيض iOS */
+  background-color: #fff; /* لون أبيض iOS */
   width: 80%;
   max-width: 350px; /* عرض card في iOS */
   height: auto; /* ارتفاع تلقائي حسب المحتوى */
   margin: 15px auto; /* هامش حول ال card */
   display: block;
   border-radius: 8px; /* زوايا مستديرة */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* ظل iOS */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ظل iOS */
   overflow: hidden;
   padding: 15px; /* مسافة داخل ال card */
   font-size: 16px;
-  color: #eee; /* لون النص */
 }
 
 /* عند تمرير الماوس فوق ال card */
 .card:hover {
-  background-color: #222; /* لون خلفية iOS */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* ظل iOS */
+  background-color: #f2f2f2; /* لون خلفية iOS */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل iOS */
 }
 
 /* شريط أسفل الصفحة (footer) */
@@ -88,27 +87,26 @@ footer {
   left: 0;
   margin: 0;
   padding: 0;
-  background-color: #333; /* لون أبيض iOS */
+  background-color: #fff; /* لون أبيض iOS */
   width: 100%;
   height: 44px; /* ارتفاع شريط أسفل الصفحة في iOS */
   font-size: 15px;
   text-align: center;
-  border-top: 1px solid #444; /* خط فاصل */
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); /* ظل iOS */
+  border-top: 1px solid #ccc; /* خط فاصل */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* ظل iOS */
   display: block;
-  color: #eee; /* لون النص */
 }
 
 /* روابط */
 div a {
   text-decoration: none;
-  color: #eee; /* لون روابط iOS */
+  color: #007aff; /* لون روابط iOS */
   display: block;
 }
 
 /* نص مميز */
 p span {
-  color: #eee; /* لون مميز في iOS */
+  color: #007aff; /* لون مميز في iOS */
   font-size: 20px;
   display: block;
 }
