@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>قصص الانبياء</title>
+  <link rel="stylesheet" href="style.css">-l
+</head>
+
+<body id="mainBody">
+  <nav id="nav">
+    <button class="back" id="back" onclick="back()">رجوع</button>
+    قصص الأنبياء
+  </nav>
+  <div class="body" id="body"></div>
+  <footer>
+    تم اخذ محتوي هذه الصفحه من تطيبق
+    <a href="https://play.google.com/store/apps/details?id=com.atlasdata.atfale.stories">قصص بدون نت</a>
+  </footer>
+  <script src="anbiaa.js"></script>
+  <script>
+    const backBTN = document.getElementById('back');
+    for (var i = 0; i < all.length; i++) {
+      // let names = document.createElement('p').innerHTML = ``
+      //console.log(document.body);
+      //document.body.appendChild(names);
+      document.getElementById('body').innerHTML += `     
+      <div class="card" id="card" onclick="stage2(${i})">
+      <p class="name" id="name">
+        قصه
+        <br>
+        <span>
+        ${all[i][0]}
+        </span>
+      </p>
+    </div>`
+      console.log(all[i][0]);
+    }
+
+    function stage2(NameStory) {
+      const card = document.getElementById('body');
+      card.style.display = 'none';
+      document.getElementById('back').style.display = 'block';
+      console.log(`stage 2 sarted story Name : ${NameStory}`)
+      document.getElementById('mainBody').innerHTML += `     
+      <div class="body" id="storyy" display="block">
+      <p class="story" id="story">
+        ${all[NameStory][1]}
+      </p>
+    </div>`
+    }
+
+    function back() {
+      document.getElementById('storyy').style.display = 'none';
+      document.getElementById('body').style.display = 'block';
+      document.getElementById('back').style.display = 'none';
+      console.log('back');
+    }
+    //stage2('test')
+  </script>
+</body>
+
+</html>
