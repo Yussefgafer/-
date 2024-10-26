@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>قصص ذُكرت في القران</title>
+  <link rel="stylesheet" href="../style/dark-mode-ios-style.css">
+</head>
+
+<body id="mainBody">
+  <nav id="nav">
+    <button class="back" id="back" onclick="back()">رجوع</button>
+    قصص الأنبياء
+  </nav>
+  <div class="body" id="body"></div>
+  <footer>
+    تم اخذ محتوي هذه الصفحه من تطيبق
+    <a href="https://play.google.com/store/apps/details?id=com.atlasdata.atfale.stories">قصص بدون نت</a>
+  </footer>
+  <script src="quranStorys.js"></script>
+  <script>
+    const backBTN = document.getElementById('back');
+    const bodyDiv = document.getElementById('body');
+
+    all.forEach((story, index) => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.onclick = () => stage2(index);
+      card.innerHTML = `
+        <p class="name">
+          قصه
+          <br>
+          <span>${story[0]}</span>
+        </p>`;
+      bodyDiv.appendChild(card);
+    });
+
+    function stage2(NameStory) {
+      const card = document.getElementById('body');
+      card.style.display = 'none';
+      document.getElementById('back').style.display = 'block';
+
+      const storyDiv = document.createElement('div');
+      storyDiv.className = 'body';
+      storyDiv.id = 'storyy';
+      storyDiv.innerHTML = `
+        <p class="story">
+          ${all[NameStory][1]}
+        </p>`;
+      document.getElementById('mainBody').appendChild(storyDiv);
+    }
+
+    function back() {
+      const storyDiv = document.getElementById('storyy');
+      if (storyDiv) {
+        storyDiv.remove();
+      }
+      document.getElementById('body').style.display = 'block';
+      document.getElementById('back').style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>
