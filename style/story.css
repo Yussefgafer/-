@@ -1,3 +1,11 @@
+@font-face {
+  font-family: mont;
+  src: url('../font/Amiri/Amiri-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: ciro;
+  src: url('..//font/Cairo_Play/static/CairoPlay-Bold.ttf') format('truetype');
+}
 .story {
   text-align: right;
 }
@@ -5,17 +13,20 @@
 .story .h1 {
   font-size: 30px;
   color: blue;
-  text-decoration: underline wavy #f00 2px;
+  font-family: ciro;
+  /*text-decoration: underline wavy #f00 2px;*/
 }
 
 .story .h2 {
+  font-family: ciro;
   font-size: 20px;
   color: blue;
-  text-decoration: underline wavy green 1px;
+  /*text-decoration: underline wavy green 1px;*/
 }
 
 .story .aya {
   color: royalblue;
+  font-family: mont;
 }
 
 .story .allah {

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: ciro;
+  src: url('../font/Cairo_Play/static/CairoPlay-Bold.ttf') format('truetype');
+}
+
 * {
   transition: 0.35s;
   scroll-behavior: smooth;
@@ -26,6 +31,7 @@ nav {
   border-bottom: 1px solid #444;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   display: block;
+  font-family: ciro;
 }
 
 
