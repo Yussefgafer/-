@@ -1,0 +1,100 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>popup test</title>
+</head>
+<style>
+
+</style>
+
+<body>
+  <style>
+#msg {
+  text-align: center;
+  text-justify: center;
+  text-anchor: center;
+  align-self: center;
+  margin: auto
+}
+
+#msgDiv {
+  position: fixed;
+  display: none;
+  top: 50px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.74);
+  color: #fff;
+  backdrop-filter: blur(5px);
+  min-width: 40%;
+  max-width: 100%;
+  padding: 15px;
+  height: auto;
+  border-radius: 8px;
+  text-align: center;
+  text-justify: center;
+  text-anchor: center;
+  display: flex;
+  border-bottom: solid 4px #000;
+  transform: translateX(150%);
+  z-index: 99;
+  animation: showStartMSG 5s cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes showStartMSG {
+ 0%,100%{ 
+    transform: translateX(150%);
+  }
+  25% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  75% {
+    transform: translateX(0%);
+  }
+}
+  </style>
+  <div id="msgDiv">
+    <p id="msg">
+      اذكر الله
+    </p>
+  </div>
+</body>
+<script>
+  function start() {
+  /*document.body.innerHTML += `  
+    <div id="msg-div">
+      <p id="msg"></p>
+    </div>`;*/
+
+  let azkar = [
+        'الله اكبر',
+        'صلي علي النبي',
+        'لا إلاه إلا الله',
+        'بإسم الله تتم الامور',
+        'لا إلاه الا انت سبحانك',
+        'المُتوفيِ هو الله\n المُتوفيَ هو الانسان الميت',
+        'إن الله يراك', 
+        'اذكر الله',
+        'سبحان الله',
+        'بسم الله',
+        'لا إله إلا الله',
+        'صلي علي محمد',
+        'محمد اخر الانبياء',
+        'لم يذكر كل الانبياء قي القرأن',
+        'سيدنا ابراهيم ابو الانبياء\n فكل الانبياء من بعده كانو من نسله'
+        ]
+        
+        
+        
+  let test = ['this is a test message']
+  const msgDiv = document.getElementById('msgDiv');
+  const msg = document.getElementById('msg');
+  msg.innerText = test[Math.floor(Math.random() * test.length)];
+}
+start();
+</script>
+
+</html>

@@ -2,10 +2,12 @@
   font-family: mont;
   src: url('../font/Amiri/Amiri-Regular.ttf') format('truetype');
 }
+
 @font-face {
   font-family: ciro;
-  src: url('..//font/Cairo_Play/static/CairoPlay-Bold.ttf') format('truetype');
+  src: url('../font/Cairo_Play/static/CairoPlay-Bold.ttf') format('truetype');
 }
+
 .story {
   text-align: right;
 }
@@ -26,10 +28,59 @@
 
 .story .aya {
   color: royalblue;
+  text-align: right;
+  text-anchor: right;
   font-family: mont;
 }
 
 .story .allah {
   font-size: 25px;
   color: blue;
+}
+
+
+#msg {
+  text-align: center;
+  text-justify: center;
+  text-anchor: center;
+  align-self: center;
+  margin: auto
+}
+
+#msgDiv {
+  position: fixed;
+  display: none;
+  top: 50px;
+  right: 10px;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  color: #fff;
+  min-width: 40%;
+  max-width: 100%;
+  padding: 15px;
+  height: auto;
+  border-radius: 8px;
+  text-align: center;
+  text-justify: center;
+  text-anchor: center;
+  display: flex;
+  border-bottom: solid 4px #000;
+  transform: translateX(150%);
+  z-index: 99;
+  animation: showStartMSG 5s cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes showStartMSG {
+ 0%,100%{ 
+    transform: translateX(150%);
+  }
+  25% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  75% {
+    transform: translateX(0%);
+  }
 }
