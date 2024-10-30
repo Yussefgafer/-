@@ -38,6 +38,10 @@
   color: blue;
 }
 
+.story .hades {
+  color: royalblue;
+  display: inline;
+}
 
 #msg {
   text-align: center;
@@ -70,16 +74,23 @@
   animation: showStartMSG 5s cubic-bezier(1, 0, 0, 1);
 }
 
+
+
 @keyframes showStartMSG {
- 0%,100%{ 
+
+  0%,
+  100% {
     transform: translateX(150%);
   }
+
   25% {
     transform: translateX(0%);
   }
+
   50% {
     transform: translateX(0%);
   }
+
   75% {
     transform: translateX(0%);
   }
