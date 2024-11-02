@@ -1852,4 +1852,4 @@ let muhamed = [
 
  `
   ]
-let all = [adam,sheth, noh, ibrahem, ishak, ayyob, shoayb, hood, loot, yakib, zoAlkafal, ahlAlqarya, youshay, edres, saleh, esmael, sheth, yussof, yunes, musa, dawood, yasa, soliman, azez, esa, elyas, zakarya, muhamed];
+let all = [adam,sheth, noh /*,ibrahem, ishak, ayyob, shoayb, hood, loot, yakib, zoAlkafal, ahlAlqarya, youshay, edres, saleh, esmael, sheth, yussof, yunes, musa, dawood, yasa, soliman, azez, esa, elyas, zakarya, muhamed*/];
