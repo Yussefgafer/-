@@ -3,6 +3,28 @@
   src: url('../font/Cairo_Play/static/CairoPlay-Bold.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: aref;
+  src: url('../font/Aref_Ruqaa_Ink/ArefRuqaaInk-Regular.ttf') format('truetype');
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap');
+
+
+.aref-ruqaa-ink-regular {
+  font-family: "Aref Ruqaa Ink", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aref-ruqaa-ink-bold {
+  font-family: "Aref Ruqaa Ink", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 * {
   transition: 0.35s;
   scroll-behavior: smooth;
@@ -32,14 +54,18 @@ nav {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   display: block;
   font-family: ciro;
+  font-weight: 800;
+  font-style: bold;
+  
 }
 
 
 nav .back {
-  color: #eee;
+  color: blue;
+  font-size: 20px;
   display: none;
   position: absolute;
-  top: 10px;
+  top: 2.5px;
   left: 15px;
   height: 24px;
   background-color: transparent;
@@ -80,7 +106,7 @@ nav .back {
 .card:hover {
   background-color: #222;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  scale: 1.1;
+  scale: 1.05;
 }
 
 footer {

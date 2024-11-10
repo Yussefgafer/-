@@ -7,7 +7,7 @@
   <title>
     قصص و عِبر
   </title>
-
+  <link rel="icon" href="../icon.jpg" type="image/jpg">
   <link rel="stylesheet" href="../style/dark-mode-ios-style.css">
   <link rel="stylesheet" href="../style/story.css">
 </head>
@@ -25,8 +25,15 @@
   <div id="msgDiv">
     <p id="msg"></p>
   </div>
-  <script src="3ebr.js"></script>
+  <script src="s/1.js" type="text/javascript" charset="utf-8"></script>
+  <script src="s/2.js" type="text/javascript" charset="utf-8"></script>
+
   <script>
+    let all = [me3rag, AshabAlkagf];
+    let StN = [
+      'الإسراء و المعراج',
+      'اصحاب الكهف'
+      ]
     const backBTN = document.getElementById('back');
     const bodyDiv = document.getElementById('body');
 
@@ -38,7 +45,7 @@
         <p class="name">
           قصه
           <br>
-          <span>${story[0]}</span>
+          <span>${StN[index]}</span>
         </p>`;
       bodyDiv.appendChild(card);
     });
@@ -53,7 +60,7 @@
       storyDiv.id = 'storyy';
       storyDiv.innerHTML = `
         <p class="story">
-          ${all[NameStory][1]}
+          ${all[NameStory]}
         </p>`;
       document.getElementById('mainBody').appendChild(storyDiv);
     }

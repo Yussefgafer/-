@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -5,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>قصص الانبياء</title>
-
+  <link rel="icon" href="../icon.jpg" type="image/jpg">
   <link rel="stylesheet" href="../style/dark-mode-ios-style.css">
   <link rel="stylesheet" href="../style/story.css">
 </head>
@@ -20,32 +21,14 @@
     تم اخذ محتوي هذه الصفحه من تطبيق
     <a href="https://play.google.com/store/apps/details?id=com.atlasdata.atfale.stories">قصص بدون نت</a>
   </footer>
-  <div id="msgDiv">
-    <p id="msg"></p>
-  </div>
-  <script src="anbiaa.js"></script>
-  <script src="s/1.js" type="text/javascript" charset="utf-8"></script>
-  <script src="s/2.js" type="text/javascript" charset="utf-8"></script>
-  <script src="s/3.js" type="text/javascript" charset="utf-8"></script>
-  <script src="s/4.js" type="text/javascript" charset="utf-8"></script>
-<script src="s/5.js" type="text/javascript" charset="utf-8"></script><script src="s/6.js" type="text/javascript" charset="utf-8"></script>  <script src="../main.js" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript" charset="utf-8">
-  </script>
+  
+  <script src="main.js"></script>
+  <script src="stories.js"></script>
   <script>
-    let all = [adam, sheth, noh, ibrahem , ishak, ayyob/*, shoayb, hood, loot, yakib, zoAlkafal, ahlAlqarya, youshay, edres, saleh, esmael, sheth, yussof, yunes, musa, dawood, yasa, soliman, azez, esa, elyas, zakarya, muhamed*/ ];
-    let stN = [
-      'ادم عليه السلام',
-      'شيث عليه السلام',
-      'نوح عليه السلام',
-      'إبراهيم عليه السلام',
-      'إسحاق عليه السلام', 
-      'ايوب عليه السلام'
-      
-      ]
     const backBTN = document.getElementById('back');
     const bodyDiv = document.getElementById('body');
 
-    all.forEach((story, index) => {
+    function createStoryCard(story, index) {
       const card = document.createElement('div');
       card.className = 'card';
       card.onclick = () => stage2(index);
@@ -53,12 +36,13 @@
         <p class="name">
           قصه
           <br>
-          <span>${stN[index]}</span>
-        </p>`;
-      bodyDiv.appendChild(card);
-    });
+          <span>${story.name}</span>
+        </p>
+      `;
+      return card;
+    }
 
-    function stage2(NameStory) {
+    function stage2(index) {
       const card = document.getElementById('body');
       card.style.display = 'none';
       document.getElementById('back').style.display = 'block';
@@ -68,8 +52,9 @@
       storyDiv.id = 'storyy';
       storyDiv.innerHTML = `
         <p class="story">
-          ${all[NameStory]}
-        </p>`;
+          ${stories[index].content}
+        </p>
+      `;
       document.getElementById('mainBody').appendChild(storyDiv);
     }
 
@@ -81,6 +66,11 @@
       document.getElementById('body').style.display = 'block';
       document.getElementById('back').style.display = 'none';
     }
+
+    stories.forEach((story, index) => {
+      bodyDiv.appendChild(createStoryCard(story, index));
+    });
+
   </script>
 
 </body>
