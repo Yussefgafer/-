@@ -22,14 +22,15 @@ function start() {
         'صلي علي محمد',
         'محمد اخر الانبياء',
         'لم يذكر كل الانبياء قي القرأن',
-        'سيدنا ابراهيم ابو الانبياء\n فكل الانبياء من بعده كانو من نسله', 
-        'تذكر ان الله يراك', 
-        'إن الدنيا اختبار \n فلا تدع الدنيا تلهيك عن واجبك', 
+        'سيدنا ابراهيم ابو الانبياء\n فكل الانبياء من بعده كانو من نسله',
+        'تذكر ان الله يراك',
+        'إن الدنيا اختبار \n فلا تدع الدنيا تلهيك عن واجبك',
         'إستعيذ بالله من شياطين الإنس و الجن'
         ]
 
   const msgDiv = document.getElementById('msgDiv');
   const msg = document.getElementById('msg');
   msg.innerText = azkar[Math.floor(Math.random() * azkar.length)];
+  console.log(azkar[Math.floor(Math.random() * azkar.length)]);
 }
 start();
