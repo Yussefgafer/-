@@ -1,76 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>قصص اسلامية</title>
+    <link rel="icon" href=" icon.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="style/dark-mode-ios-style.css" />
+  </head>
 
-  <title>قصص اسلامية</title>
-  <link rel="icon" href=" icon.jpg" type="image/jpg">
-  <link rel="stylesheet" href="style/dark-mode-ios-style.css">
-</head>
-
-<body>
-  <nav>
-    قصص اسلامية
-  </nav>
-  <div class="body">
-    <link rel="stylesheet" href="style/story.css">
-    <a class="card" href="anbiaa/anbiaa.html">
-      <p class="name">
-        قصص الانبياء
-      </p>
-    </a>
-    <a class="card" href="3/3ebr.html">
-      <p class="name">
-        قصص و عِبر
-      </p>
-    </a>
-    <!-- 
+  <body>
+    <nav>قصص اسلامية</nav>
+    <div class="body">
+      <link rel="stylesheet" href="style/story.css" />
+      <a class="card" href="anbiaa/anbiaa.html">
+        <p class="name">قصص الانبياء</p>
+      </a>
+      <a class="card" href="3/3ebr.html">
+        <p class="name">قصص و عِبر</p>
+      </a>
+      <!-- 
     <a class="card" href="tafser/tafser.html">
       <p class="name">
         تفسير
       </p>
     </a>
     -->
-    <!--<a class="card" href="quranStorys/quranStorys.html">-->
-    <div class="card" id="disabled">
-      <p class="name">
-        قصص ذُكرِت في القرآن
-      </p>
+      <!--<a class="card" href="quranStorys/quranStorys.html">-->
+      <div class="card" id="disabled">
+        <p class="name">قصص ذُكرِت في القرآن</p>
+      </div>
+      <!--/a>-->
+      <div class="card" id="disabled">
+        <p>قصص الصحابة</p>
+      </div>
     </div>
-    <!--/a>-->
-    <div class="card" id="disabled">
-      <p>
-        قصص الصحابة
-      </p>
-    </div>
+    <style>
+      #disabled {
+        color: red;
+      }
+
+      #disabled:hover {
+        content: "قريبا";
+        scale: 1;
+      }
+
+      #disabled:before {
+        content: "قريبا";
+        color: blue;
+        font-size: 20px;
+      }
+    </style>
+    <footer>
+      تم اخذ محتوي هذه الصفحه من تطيبق
+      <a
+        href="https://play.google.com/store/apps/details?id=com.atlasdata.atfale.stories"
+        >قصص بدون نت</a
+      >
+    </footer>
+  </body>
+  <div id="msgDiv">
+    <p id="msg"></p>
   </div>
-  <style>
-    #disabled {
-      color: red;
-    }
-
-    #disabled:hover {
-      content: "قريبا";
-      scale: 1;
-    }
-
-    #disabled:before {
-      content: "قريبا";
-      color: blue;
-      font-size: 20px;
-    }
-  </style>
-  <footer>
-    تم اخذ محتوي هذه الصفحه من تطيبق
-    <a href="https://play.google.com/store/apps/details?id=com.atlasdata.atfale.stories">قصص بدون نت</a>
-  </footer>
-</body>
-<div id="msgDiv">
-  <p id="msg"></p>
-</div>
-<script src="main.js"></script>
-
+  <script src="main.js"></script>
 </html>
